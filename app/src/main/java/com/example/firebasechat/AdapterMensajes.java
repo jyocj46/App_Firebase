@@ -1,5 +1,6 @@
 package com.example.firebasechat;
 
+import android.support.v4.app.RemoteActionCompatParcelizer;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,19 +9,26 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.GlideBuilder;
+import com.bumptech.glide.RequestManager;
+import com.bumptech.glide.load.model.GlideUrl;
+
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class AdapterMensajes extends RecyclerView.Adapter<HolderMensaje> {
 
-    private List<Mensaje> listMensaje = new ArrayList<>();
+    private List<MensajeRecibir> listMensaje = new ArrayList<>();
     private Context c;
 
     public AdapterMensajes(Context c) {
         this.c = c;
     }
 
-    public void addMensaje(Mensaje m){
+    public void addMensaje(MensajeRecibir m){
 
         listMensaje.add(m);
         notifyItemInserted(listMensaje.size());
@@ -37,7 +45,30 @@ public class AdapterMensajes extends RecyclerView.Adapter<HolderMensaje> {
     public void onBindViewHolder(@NonNull HolderMensaje holder, int position) {
         holder.getNombre().setText(listMensaje.get(position).getNombre());
         holder.getMensaje().setText(listMensaje.get(position).getMensaje());
-        holder.getHora().setText(listMensaje.get(position).getHora());
+
+        if (listMensaje.get(position).getType_mensaje().equals("2")){
+        holder.getFotoMensaje().setVisibility(View.VISIBLE);
+        holder.getMensaje().setVisibility(View.VISIBLE);
+            //Error glide--------------------------------------------------------------------------------------------------------------!!!!!!!
+            Glide.with(c).load(listMensaje.get(position).getUrlFoto()).into(holder.getFotoMensaje());
+        } else if (listMensaje.get(position).getType_mensaje().equals("1")){
+            holder.getFotoMensaje().setVisibility(View.GONE);
+            holder.getMensaje().setVisibility(View.VISIBLE);
+        }
+        if (listMensaje.get(position).getFotoPerfil().isEmpty()){
+            holder.getFotoMensajePerfil().setImageResource(R.mipmap.ic_launcher);
+        }else{
+            //Error glide--------------------------------------------------------------------------------------------------------------!!!!!!!
+            //Glide.with(c).load(listMensaje.get(position).getFotoPerfil()).into(holder.getFotoMensajePerfil());
+            Glide.with(c).load(listMensaje.get(position).getFotoPerfil()).into(holder.getFotoMensajePerfil());
+
+        }
+
+
+        Long codigoHora = listMensaje.get(position).getHora();
+        Date d =  new Date(codigoHora);
+        SimpleDateFormat sdf = new SimpleDateFormat("hh:mm:ss a"); //a pm o am
+        holder.getHora().setText(sdf.format(d));
     }
 
     @Override

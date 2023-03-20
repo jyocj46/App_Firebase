@@ -1,6 +1,5 @@
 package com.example.firebasechat;
 
-import android.support.v4.app.RemoteActionCompatParcelizer;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,9 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.GlideBuilder;
-import com.bumptech.glide.RequestManager;
-import com.bumptech.glide.load.model.GlideUrl;
+import com.example.firebasechat.Entidades.MensajeRecibir;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -61,7 +58,6 @@ public class AdapterMensajes extends RecyclerView.Adapter<HolderMensaje> {
             //Error glide--------------------------------------------------------------------------------------------------------------!!!!!!!
             //Glide.with(c).load(listMensaje.get(position).getFotoPerfil()).into(holder.getFotoMensajePerfil());
             Glide.with(c).load(listMensaje.get(position).getFotoPerfil()).into(holder.getFotoMensajePerfil());
-
         }
 
 

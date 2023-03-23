@@ -9,7 +9,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.firebasechat.R;
@@ -93,7 +92,7 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
     private void nextActivity(){
-        startActivity(new Intent(LoginActivity.this,MainActivity.class));
+        startActivity(new Intent(LoginActivity.this, MensajeriaActivity.class));
         finish();
     }
 

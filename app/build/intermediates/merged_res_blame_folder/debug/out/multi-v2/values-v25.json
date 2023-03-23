@@ -4,7 +4,7 @@
             "outputFile": "com.example.firebasechat.app-mergeDebugResources-35:/values-v25/values-v25.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\josu4\\.gradle\\caches\\transforms-3\\b450ec9f42de1561023534cf0fe5010c\\transformed\\appcompat-1.6.1\\res\\values-v25\\values-v25.xml",
+                    "source": "C:\\Users\\lopez\\.gradle\\caches\\transforms-3\\b450ec9f42de1561023534cf0fe5010c\\transformed\\appcompat-1.6.1\\res\\values-v25\\values-v25.xml",
                     "from": {
                         "startLines": "2,3,4,6",
                         "startColumns": "4,4,4,4",

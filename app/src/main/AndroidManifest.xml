@@ -13,24 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FireBaseChat"
         tools:targetApi="31">
-        <activity
-            android:name=".Activity.MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".Activity.RegistroActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
         <activity
             android:name=".Activity.LoginActivity"
             android:exported="true">
@@ -40,6 +23,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Activity.RegistroActivity"></activity>
+        <activity android:name=".Activity.MensajeriaActivity"></activity>
     </application>
 
 </manifest>

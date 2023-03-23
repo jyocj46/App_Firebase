@@ -1,14 +1,14 @@
-#Mon Mar 20 01:11:38 CST 2023
-path.4=11/classes.dex
-path.3=classes2.dex
-path.2=9/classes.dex
+#Tue Mar 21 00:21:42 CST 2023
+path.4=classes2.dex
+path.3=9/classes.dex
+path.2=11/classes.dex
 path.1=0/classes.dex
 path.0=classes.dex
-base.4=C\:\\Users\\josu4\\StudioProjects\\App_Firebase\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
-base.3=C\:\\Users\\josu4\\StudioProjects\\App_Firebase\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
-base.2=C\:\\Users\\josu4\\StudioProjects\\App_Firebase\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
-base.1=C\:\\Users\\josu4\\StudioProjects\\App_Firebase\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.0=C\:\\Users\\josu4\\StudioProjects\\App_Firebase\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.4=C\:\\Users\\lopez\\OneDrive\\Escritorio\\UMG\\5to Semestre\\Programacion III\\AppChat\\App_Firebase-main\\App_Firebase-main\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+base.3=C\:\\Users\\lopez\\OneDrive\\Escritorio\\UMG\\5to Semestre\\Programacion III\\AppChat\\App_Firebase-main\\App_Firebase-main\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
+base.2=C\:\\Users\\lopez\\OneDrive\\Escritorio\\UMG\\5to Semestre\\Programacion III\\AppChat\\App_Firebase-main\\App_Firebase-main\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
+base.1=C\:\\Users\\lopez\\OneDrive\\Escritorio\\UMG\\5to Semestre\\Programacion III\\AppChat\\App_Firebase-main\\App_Firebase-main\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.0=C\:\\Users\\lopez\\OneDrive\\Escritorio\\UMG\\5to Semestre\\Programacion III\\AppChat\\App_Firebase-main\\App_Firebase-main\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex

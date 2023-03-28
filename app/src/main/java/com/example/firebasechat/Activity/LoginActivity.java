@@ -11,6 +11,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.firebasechat.Persistencia.UsuarioDAO;
 import com.example.firebasechat.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -66,6 +67,8 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+    //    UsuarioDAO.getInstance().anadirFotoDePerfilALosUsuariosQueNoTienenFoto();//ejecutarlo solo una vez
+
 
     }
     private boolean isValidEmail(CharSequence target){
@@ -92,8 +95,8 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
     private void nextActivity(){
-        startActivity(new Intent(LoginActivity.this, MensajeriaActivity.class));
-        finish();
+       startActivity(new Intent(LoginActivity.this, MensajeriaActivity.class));
+       finish();
     }
 
 }

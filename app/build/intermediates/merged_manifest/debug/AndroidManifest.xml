@@ -34,24 +34,6 @@
         android:testOnly="true"
         android:theme="@style/Theme.FireBaseChat" >
         <activity
-            android:name="com.example.firebasechat.Activity.MainActivity"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="com.example.firebasechat.Activity.RegistroActivity"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
             android:name="com.example.firebasechat.Activity.LoginActivity"
             android:exported="true" >
             <intent-filter>
@@ -60,6 +42,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.firebasechat.Activity.RegistroActivity" />
+        <activity android:name="com.example.firebasechat.Activity.MensajeriaActivity" />
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"
@@ -113,6 +97,15 @@
             </intent-filter>
         </activity>
 
+        <provider
+            android:name="com.kbeanie.multipicker.utils.AMPFileProvider"
+            android:authorities="com.example.firebasechat.multipicker.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/paths" />
+        </provider>
         <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"
             android:authorities="com.example.firebasechat.firebaseinitprovider"

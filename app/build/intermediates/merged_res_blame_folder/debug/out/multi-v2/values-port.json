@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.firebasechat.app-mergeDebugResources-35:/values-port/values-port.xml",
+            "outputFile": "com.example.firebasechat.app-mergeDebugResources-38:/values-port/values-port.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\lopez\\.gradle\\caches\\transforms-3\\b450ec9f42de1561023534cf0fe5010c\\transformed\\appcompat-1.6.1\\res\\values-port\\values-port.xml",
+                    "source": "C:\\Users\\Windows 10\\.gradle\\caches\\transforms-3\\b450ec9f42de1561023534cf0fe5010c\\transformed\\appcompat-1.6.1\\res\\values-port\\values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

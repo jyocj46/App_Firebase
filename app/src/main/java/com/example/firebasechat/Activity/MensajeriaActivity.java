@@ -99,7 +99,7 @@ public class MensajeriaActivity extends AppCompatActivity {
                     Mensaje mensaje = new Mensaje();
                     mensaje.setMensaje(mensajeEnviar);
                     mensaje.setContieneFoto(false);
-                    mensaje.setKeyEmisor(UsuarioDAO.getKeyUsuario());
+                    mensaje.setKeyEmisor(UsuarioDAO.getInstance().getKeyUsuario());
                     databaseReference.push().setValue(mensaje);
                     txtMensajes.setText("");
                 }
@@ -220,7 +220,7 @@ public class MensajeriaActivity extends AppCompatActivity {
                         mensaje.setMensaje("El usuario ha enviado una foto");
                         mensaje.setUrlFoto(uri.toString());
                         mensaje.setContieneFoto(true);
-                        mensaje.setKeyEmisor(UsuarioDAO.getKeyUsuario());
+                        mensaje.setKeyEmisor(UsuarioDAO.getInstance().getKeyUsuario());
                         databaseReference.push().setValue(mensaje);
                     }
                 }

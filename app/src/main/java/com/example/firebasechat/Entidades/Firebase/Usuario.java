@@ -7,10 +7,16 @@ public class Usuario {
     private String fotoPerfilURL;
     private String nombre;
     private String correo;
-    private Object createdTimestap;
 
     public Usuario() {
-        createdTimestap = ServerValue.TIMESTAMP;
+
+    }
+    public String getFotoPerfilURL() {
+        return fotoPerfilURL;
+    }
+
+    public void setFotoPerfilURL(String fotoPerfilURL) {
+        this.fotoPerfilURL = fotoPerfilURL;
     }
 
     public String getNombre() {
@@ -29,16 +35,6 @@ public class Usuario {
         this.correo = correo;
     }
 
-    public String getFotoPerfilURL() {
-        return fotoPerfilURL;
-    }
 
-    public void setFotoPerfilURL(String fotoPerfilURL) {
-        this.fotoPerfilURL = fotoPerfilURL;
-    }
-
-    public Object getCreatedTimestap() {
-        return createdTimestap;
-    }
 
 }

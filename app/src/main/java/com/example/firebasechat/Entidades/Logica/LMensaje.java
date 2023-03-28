@@ -4,6 +4,7 @@ import com.example.firebasechat.Entidades.Firebase.Mensaje;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 
 public class LMensaje {
 
@@ -48,7 +49,7 @@ public class LMensaje {
     public String fechaDeCreacionDelMensaje(){
 
         Date date =  new Date(getCreatedTimestampLong());
-        SimpleDateFormat sdf = new SimpleDateFormat("hh:mm:ss a"); //a pm o am
+        SimpleDateFormat sdf = new SimpleDateFormat("hh:mm:ss a", Locale.getDefault()); //a pm o am
         return sdf.format(date);
     }
 

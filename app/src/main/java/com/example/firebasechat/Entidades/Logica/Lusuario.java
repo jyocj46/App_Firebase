@@ -1,6 +1,8 @@
 package com.example.firebasechat.Entidades.Logica;
 
 import com.example.firebasechat.Entidades.Firebase.Usuario;
+import com.example.firebasechat.Persistencia.UsuarioDAO;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.Exclude;
 
 import java.text.SimpleDateFormat;
@@ -33,14 +35,19 @@ public class Lusuario {
         this.usuario = usuario;
     }
 
-    public long getCreatedTimestapLong(){
-        return (long) usuario.getCreatedTimestap();
-    }
+
 
     public String obtenerFechaDeCreacion(){
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault());
-        Date date = new Date(getCreatedTimestapLong());
+        Date date = new Date(UsuarioDAO.getInstance().fechaDeCreacionLong());
         return simpleDateFormat.format(date);
     }
+
+    public String obtenerFechaDeUltimaVezQueSeLogeo(){
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault());
+        Date date = new Date(UsuarioDAO.getInstance().fechaDeUltimaVezQueSeLogeoLong());
+        return simpleDateFormat.format(date);
+    }
+
 
 }
